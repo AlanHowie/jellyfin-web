@@ -1218,12 +1218,15 @@ export default function (options) {
     }
 
     const h264CodecProfileConditions = [
+        /*
+        For Old Browsers
         {
             Condition: 'NotEquals',
             Property: 'IsAnamorphic',
             Value: 'true',
             IsRequired: false
         },
+        */
         {
             Condition: 'EqualsAny',
             Property: 'VideoProfile',
@@ -1245,12 +1248,15 @@ export default function (options) {
     ];
 
     const hevcCodecProfileConditions = [
+        /*
+        For Old Browsers
         {
             Condition: 'NotEquals',
             Property: 'IsAnamorphic',
             Value: 'true',
             IsRequired: false
         },
+        */
         {
             Condition: 'EqualsAny',
             Property: 'VideoProfile',
@@ -1281,12 +1287,15 @@ export default function (options) {
     ];
 
     const av1CodecProfileConditions = [
+        /*
+        For Old Browsers
         {
             Condition: 'NotEquals',
             Property: 'IsAnamorphic',
             Value: 'true',
             IsRequired: false
         },
+        */
         {
             Condition: 'EqualsAny',
             Property: 'VideoProfile',
